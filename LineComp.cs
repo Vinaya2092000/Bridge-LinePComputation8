@@ -36,6 +36,14 @@ namespace LineComparison8
             {
                 Console.WriteLine("The two lines are equal");
             }
+            else if (len1 < len2)
+            {
+                Console.WriteLine(" Line 1 is lesser than Line 2");
+            }
+            else if (len2 < len1)
+            {
+                Console.WriteLine(" Line 1 is greater than Line 2");
+            }
             else
             {
                 Console.WriteLine("lines are not equal");
