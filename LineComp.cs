@@ -8,7 +8,7 @@ namespace LineComparison8
 {
     public class LineComp
     {
-        //using the Cartesian system,So that I can calculate its length.
+        //equality of two lines based on the end points,
         public void Length()
         {
             Console.WriteLine("Enter the line point x1: ");
@@ -19,8 +19,27 @@ namespace LineComparison8
             int y1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the line point y2: ");
             int y2 = Convert.ToInt32(Console.ReadLine());
-            var l = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
-            Console.WriteLine(l);
+            var len1 = Math.Sqrt((Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
+            Console.WriteLine(len1);
+
+            Console.WriteLine("Enter the line point x3: ");
+            int x3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the line point x4: ");
+            int x4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the line point y3: ");
+            int y3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the line point y4: ");
+            int y4 = Convert.ToInt32(Console.ReadLine());
+            var len2 = Math.Sqrt((Math.Pow(x3 - x4, 2) + Math.Pow(y3 - y4, 2)));
+            Console.WriteLine(len2);
+            if (len1.Equals(len2))
+            {
+                Console.WriteLine("The two lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("lines are not equal");
+            }
         }
     }
 }
