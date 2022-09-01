@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Problems");
+            LineComp lineComp = new LineComp();
+            lineComp.Length();
         }
     }
 }
