@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LineComparison8
 {
+    // //Already using class so attaching same program
     public class LineComp
     {
         //equality of two lines based on the end points,
